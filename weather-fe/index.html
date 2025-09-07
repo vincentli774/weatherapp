@@ -11,9 +11,10 @@
     <div id="app">
     <label for="city">City:</label><br>
     <input type="text" id="city" name="city"><br>
+    <!--call functions getWeather and fetchWeather in js file-->
     <button onclick="getWeather()">Get weather</button><br>
     <label for="cities">Cities:</label><br>
-    <button onclick="fetchCities()">Get cities</button>
+    <button onclick="fetchCities()">Get favorite cities</button>
     <p id="cities"></p>
     <p id="result"></p>
     <p>Temperature: Celsius</p> <p id="temperature"></p>
@@ -24,6 +25,7 @@
     <script src="script.js"></script>
 </body>
 <style>
+/* use media queries to have a responsive view*/
     @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
