@@ -5,8 +5,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require('cors');
 
-//using cors allows the front end to make requests 
-// for cities to the backend
+//using cors allows the front-end to make requests 
+// for cities to the back-end
 app.use(cors())
 //body-parser parses incoming requests making them 
 //available as objects
@@ -20,7 +20,7 @@ app.get("/cities", (req, res) => {
 
 //post route for cities
 app.post("/cities", (req, res) => {
-  //accessing city key value in json body
+  //accessing city key value in json object body
   const city = req.body["city"];
   //adding city value to cities in-memory storage
   cities.push(city);
